@@ -1,91 +1,91 @@
   
       [
             {
-                "image": "bass/01.jpg",
+                "image": "IMG/01.jpg",
                 "question": "これはどの会社のバス？",
                 "choices": ["小田急バス", "京王電鉄バス"],
                 "correct": 0
             },
             {
-                "image": "bass/02.jpg",
+                "image": "IMG/02.jpg",
                 "question": "都営バスは何年から始まった？",
                "choices": ["1963年", "1924年"],
                 "correct": 1
             },
             {
-                "image": "bass/03.jpg",
+                "image": "IMG/03.jpg",
                 "question": "このバスの名称は？",
                "choices": ["連節バス", "高速バス"],
                 "correct": 0
             },
             {
-                "image": "bass/04.jpg",
+                "image": "IMG/04.jpg",
                 "question": "バスの日はいつ",
                "choices": ["10月14日", "9月20日"],
                 "correct": 1
             },
             {
-                "image": "bass/05.png",
+                "image": "IMG/05.png",
                 "question": "この車種は？",
                "choices": ["大型バス", "マイクロバス"],
                 "correct": 1
             },  
             {
-                "image": "bass/06.jpg",
+                "image": "IMG/06.jpg",
                 "question": "このバスの開発したメーカーは？",
                "choices": ["Bamford Bus Company", "スカニア・バンホール"],
                 "correct": 0
             },  
             {
-                "image": "bass/07.jpg",
+                "image": "IMG/07.jpg",
                 "question": "この場所は？",
                "choices": ["新宿高速バスターミナル", "東京駅高速バスターミナル"],
                 "correct": 0
             },  
             {
-                "image": "bass/08.jpg",
+                "image": "IMG/08.jpg",
                 "question": "どのエネルギーを使って走る？",
                "choices": ["水素エネルギー", "ガソリン"],
                 "correct": 0
             },  
             {
-                "image": "bass/09.webp",
+                "image": "IMG/09.webp",
                 "question": "このバスは？",
                "choices": ["都営バス", "京急バス"],
                 "correct": 0
             },  
             {
-                "image": "bass/10.jpg",
+                "image": "IMG/10.jpg",
                 "question": "どこの営業所？",
                "choices": ["都営バス品川営業所", "都営バス渋谷営業所"],
                 "correct": 0
             },  
             {
-                "image": "bass/11.jpg",
+                "image": "IMG/11.jpg",
                 "question": "この路線図のバスは？",
                "choices": ["東急バス", "京王バス"],
                 "correct": 1
             },  
             {
-                "image": "bass/12.jpg",
+                "image": "IMG/12.jpg",
                 "question": "ドアの数は？",
                "choices": ["３つ", "２つ"],
                 "correct": 0
             },  
             {
-                "image": "bass/13.jpg",
+                "image": "IMG/13.jpg",
                 "question": "西武バスの旧名称は？",
                "choices": ["東浦自動車", "富士急バス"],
                 "correct": 0
             },  
             {
-                "image": "bass/14.jpg",
+                "image": "IMG/14.jpg",
                 "question": "この正式名称は？",
                "choices": ["整理券発券機", "運賃箱"],
                 "correct": 0
             },  
             {
-                "image": "bass/15.jpg",
+                "image": "IMG/15.jpg",
                 "question": "プレートのひらがなの意味は？",
                "choices": ["車両の用途分け", "バス会社の種類分け"],
                 "correct": 0
