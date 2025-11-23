@@ -10,7 +10,7 @@
                 "image": "IMG/02.jpg",
                 "question": "都営バスは何年から始まった？",
                "choices": ["1963年", "1924年"],
-                "correct": 1
+                "correct": 0
             },
             {
                 "image": "IMG/03.jpg",
@@ -22,13 +22,13 @@
                 "image": "IMG/04.jpg",
                 "question": "バスの日はいつ",
                "choices": ["10月14日", "9月20日"],
-                "correct": 1
+                "correct": 0
             },
             {
                 "image": "IMG/05.png",
                 "question": "この車種は？",
                "choices": ["大型バス", "マイクロバス"],
-                "correct": 1
+                "correct": 0
             },  
             {
                 "image": "IMG/06.jpg",
