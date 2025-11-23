@@ -59,37 +59,7 @@
                 "question": "どこの営業所？",
                "choices": ["都営バス品川営業所", "都営バス渋谷営業所"],
                 "correct": 0
-            },  
-            {
-                "image": "IMG/11.jpg",
-                "question": "この路線図のバスは？",
-               "choices": ["東急バス", "京王バス"],
-                "correct": 1
-            },  
-            {
-                "image": "IMG/12.jpg",
-                "question": "ドアの数は？",
-               "choices": ["３つ", "２つ"],
-                "correct": 0
-            },  
-            {
-                "image": "IMG/13.jpg",
-                "question": "西武バスの旧名称は？",
-               "choices": ["東浦自動車", "富士急バス"],
-                "correct": 0
-            },  
-            {
-                "image": "IMG/14.jpg",
-                "question": "この正式名称は？",
-               "choices": ["整理券発券機", "運賃箱"],
-                "correct": 0
-            },  
-            {
-                "image": "IMG/15.jpg",
-                "question": "プレートのひらがなの意味は？",
-               "choices": ["車両の用途分け", "バス会社の種類分け"],
-                "correct": 0
-            }
-  ]
+            }  
+        ]
   
   
