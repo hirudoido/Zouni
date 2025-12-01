@@ -7,7 +7,7 @@
                 "correct": 0
             },
             {
-                "image": "IMG/02.jpg",
+                "image": "IMG/02.webp",
                 "question": "お雑煮は一般的にどのタイミングで食べる？",
                "choices": ["三が日", "年末"],
                 "correct": 0
@@ -19,7 +19,7 @@
                 "correct": 0
             },
             {
-                "image": "IMG/04.webp",
+                "image": "IMG/04.jpg",
                 "question": "お雑煮は九州ではなんて呼ばれている？",
                "choices": ["ノーリャー", "アーニャ"],
                 "correct": 0
