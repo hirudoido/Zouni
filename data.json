@@ -2,62 +2,62 @@
       [
             {
                 "image": "IMG/01.jpg",
-                "question": "これはどの会社のバス？",
-                "choices": ["小田急バス", "京王電鉄バス"],
+                "question": "お雑煮はいつから始まった？",
+                "choices": ["室町時代", "江戸時代"],
                 "correct": 0
             },
             {
                 "image": "IMG/02.jpg",
-                "question": "都営バスは何年から始まった？",
-               "choices": ["1963年", "1924年"],
+                "question": "お雑煮は一般的にどのタイミングで食べる？",
+               "choices": ["三が日", "年末"],
                 "correct": 0
             },
             {
                 "image": "IMG/03.jpg",
-                "question": "このバスの名称は？",
-               "choices": ["連節バス", "高速バス"],
+                "question": "丸餅の込められた意味は？",
+               "choices": ["家庭円満", "家が栄える"],
                 "correct": 0
             },
             {
                 "image": "IMG/04.jpg",
-                "question": "バスの日はいつ",
-               "choices": ["10月14日", "9月20日"],
+                "question": "",
+               "choices": ["", ""],
                 "correct": 0
             },
             {
                 "image": "IMG/05.png",
-                "question": "この車種は？",
-               "choices": ["大型バス", "マイクロバス"],
+                "question": "",
+               "choices": ["", ""],
                 "correct": 0
             },  
             {
                 "image": "IMG/06.jpg",
-                "question": "このバスの開発したメーカーは？",
-               "choices": ["Bamford Bus Company", "スカニア・バンホール"],
+                "question": "",
+               "choices": ["", ""],
                 "correct": 0
             },  
             {
                 "image": "IMG/07.jpg",
-                "question": "この場所は？",
-               "choices": ["新宿高速バスターミナル", "東京駅高速バスターミナル"],
+                "question": "",
+               "choices": ["", ""],
                 "correct": 0
             },  
             {
                 "image": "IMG/08.jpg",
-                "question": "どのエネルギーを使って走る？",
-               "choices": ["水素エネルギー", "ガソリン"],
+                "question": "",
+               "choices": ["", ""],
                 "correct": 0
             },  
             {
                 "image": "IMG/09.webp",
-                "question": "このバスは？",
-               "choices": ["都営バス", "京急バス"],
+                "question": "",
+               "choices": ["", ""],
                 "correct": 0
             },  
             {
                 "image": "IMG/10.jpg",
-                "question": "どこの営業所？",
-               "choices": ["都営バス品川営業所", "都営バス渋谷営業所"],
+                "question": "",
+               "choices": ["", ""],
                 "correct": 0
             }  
         ]
