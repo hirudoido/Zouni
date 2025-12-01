@@ -20,44 +20,44 @@
             },
             {
                 "image": "IMG/04.jpg",
-                "question": "",
-               "choices": ["", ""],
+                "question": "お雑煮は九州ではなんて呼ばれている？",
+               "choices": ["ノーリャー", "アーニャ"],
                 "correct": 0
             },
             {
                 "image": "IMG/05.png",
-                "question": "",
-               "choices": ["", ""],
+                "question": "なぜお雑煮は餅が主役なのか？",
+               "choices": ["神様へのお供え物", "魔除け"],
                 "correct": 0
             },  
             {
                 "image": "IMG/06.jpg",
-                "question": "",
-               "choices": ["", ""],
+                "question": "これはどこで食べられているお雑煮？",
+               "choices": ["青森県", "秋田県"],
                 "correct": 0
             },  
             {
                 "image": "IMG/07.jpg",
-                "question": "",
-               "choices": ["", ""],
+                "question": "これはどこで食べられているお雑煮？",
+               "choices": ["神奈川県", "東京都"],
                 "correct": 0
             },  
             {
                 "image": "IMG/08.jpg",
-                "question": "",
-               "choices": ["", ""],
+                "question": "これはどこで食べられているお雑煮？",
+               "choices": ["新潟県", "愛知県"],
                 "correct": 0
             },  
             {
-                "image": "IMG/09.webp",
-                "question": "",
-               "choices": ["", ""],
+                "image": "IMG/09.jpg",
+                "question": "これはどこで食べられているお雑煮？",
+               "choices": ["奈良県", "大阪府"],
                 "correct": 0
             },  
             {
                 "image": "IMG/10.jpg",
-                "question": "",
-               "choices": ["", ""],
+                "question": "これはどこで食べられているお雑煮？",
+               "choices": ["長崎県", "鹿児島県"],
                 "correct": 0
             }  
         ]
