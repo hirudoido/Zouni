@@ -514,11 +514,11 @@
             const accuracy = Math.round((correctCount / shuffledQuizData.length) * 100);
             resultText += `\n正解率: ${accuracy}%`;
             console.log(accuracy, score, shuffledQuizData.length);
-            if (accuracy === 100 && score >= shuffledQuizData.length * 145) {
-                grade = 'え？運ゲーおめでとうございます‼';
-            } else if (accuracy >= 100 && score >= shuffledQuizData.length * 90) {
+            if (accuracy === 100 && score >= shuffledQuizData.length * 135) {
+                grade = 'ほう！やりこみ過ぎ';
+            } else if (accuracy >= 100 && score >= shuffledQuizData.length * 80) {
                 grade = '全問正解おめでとうございます‼もっと高いスコアを目指そう‼';
-            } else if (accuracy >= 70 && score >= shuffledQuizData.length * 75) {
+            } else if (accuracy >= 70 && score >= shuffledQuizData.length * 65) {
                 grade = ' 素晴らしい！高得点を目指そう！ ';
             } else if (accuracy >= 60 && score >= shuffledQuizData.length * 50) {            
                 grade = ' よく頑張りました！ もっと高いスコアを目指そう！ ';
