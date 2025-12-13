@@ -21,7 +21,7 @@
         
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(65deg, #847300a6 0%, #ff0000 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -69,7 +69,7 @@
             margin-bottom: 1rem;
         }
         
-        .start-btn1,.start-btn2, .choice-btn {
+        .start-btn1,.start-btn2,.start-btn3 ,.choice-btn {
             border: none;
             padding: 1rem 2rem;
             font-size: 1.2rem;
@@ -86,6 +86,10 @@
         .start-btn2 {
             background: linear-gradient(45deg, #a66bff, #a319de);
             color: white;
+        }
+        .start-btn3 {
+            background: linear-gradient(45deg, #9ff057, #3af481);
+            color: #000000;
         }
         
         .start-btn:hover, .choice-btn:hover {
@@ -230,7 +234,7 @@
                 margin: 0;
                 padding:0.25;
             }
-            .start-btn1,.start-btn2 {
+            .start-btn1,.start-btn2,.start-btn3 {
                 padding: 0.5rem 1.5rem;
                 font-size: 1.1rem;
                 margin: 0.5rem 0.5rem;
@@ -286,6 +290,7 @@
             </div>
             <button class="start-btn1" onclick="startQuiz(1)">クイックスタート</button>
             <button class="start-btn2" onclick="startQuiz(2)">フォーマルスタート</button>
+              <button class="start-btn3">音声再生</button>
         </div>
         
         <!-- クイズ画面 -->
