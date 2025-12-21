@@ -573,7 +573,7 @@ function isAudioAPlaying() {
                 <div style="white-space: pre-line; margin: 1rem 0;">${resultText}</div>
                 <div style="font-size: 1.3rem; color: #ffd700; margin: 1rem 0;">${grade}</div>
             `;
-            if(shuffledQuizData.length === 10 ){
+            if(correctCount === 10 ){
              document.getElementById('resultDetails2').innerHTML = `
                <button class="start-btn1" onclick="restartQuiz(2)">特別音声再生</button>
                
