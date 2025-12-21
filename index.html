@@ -550,7 +550,7 @@ function isAudioAPlaying() {
             const accuracy = Math.round((correctCount / shuffledQuizData.length) * 100);
 
             resultText += `\n正解率: ${accuracy}%`;
-            console.log(accuracy, score, shuffledQuizData.length);
+            console.log(accuracy, score, shuffledQuizData.length,correctCount);
             if (accuracy === 100 && score >= shuffledQuizData.length * 135) {
                 grade = 'ほう！やりこみ過ぎ';
             } else if (accuracy >= 100 && score >= shuffledQuizData.length * 80) {
