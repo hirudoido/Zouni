@@ -548,7 +548,7 @@ function isAudioAPlaying() {
             });
             
             const accuracy = Math.round((correctCount / shuffledQuizData.length) * 100);
-            console.log(correctCount);
+
             resultText += `\n正解率: ${accuracy}%`;
             console.log(accuracy, score, shuffledQuizData.length);
             if (accuracy === 100 && score >= shuffledQuizData.length * 135) {
@@ -573,7 +573,7 @@ function isAudioAPlaying() {
                 <div style="white-space: pre-line; margin: 1rem 0;">${resultText}</div>
                 <div style="font-size: 1.3rem; color: #ffd700; margin: 1rem 0;">${grade}</div>
             `;
-            if(correctCount === 10 ){
+            if(shuffledQuizData.length === 10 ){
              document.getElementById('resultDetails2').innerHTML = `
                <button class="start-btn1" onclick="restartQuiz(2)">特別音声再生</button>
                
