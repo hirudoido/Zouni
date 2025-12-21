@@ -548,6 +548,7 @@ function isAudioAPlaying() {
             });
             
             const accuracy = Math.round((correctCount / shuffledQuizData.length) * 100);
+            console.log(correctCount);
             resultText += `\n正解率: ${accuracy}%`;
             console.log(accuracy, score, shuffledQuizData.length);
             if (accuracy === 100 && score >= shuffledQuizData.length * 135) {
