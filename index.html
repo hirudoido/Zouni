@@ -290,7 +290,7 @@
             </div>
             <button class="start-btn1" onclick="startQuiz(1)">クイックスタート</button>
             <button class="start-btn2" onclick="startQuiz(2)">フォーマルスタート</button>
-              <button class="start-btn3">音声再生</button>
+              <button class="start-btn3" onclick="playSound()">音声再生</button>
         </div>
         
         <!-- クイズ画面 -->
@@ -342,6 +342,15 @@
                "choices": ["1963年", "1924年"],
                 "correct": 1
             }];*/
+            //
+
+function playSound() {
+    if (!audioPlayer) {
+        audioPlayer = new Audio("挨拶_Track1.wav");
+    }
+    audioPlayer.currentTime = 0;
+    audioPlayer.play();
+}
 
         fetch('./data.json')
           .then(res => res.json())
@@ -359,7 +368,7 @@
         let answers = [];
         let shuffledQuizData = [];
         let currentChoiceOrder = [];
-        
+        let audioPlayer = null;
         // 配列をシャッフルする関数
         function shuffleArray(array,a) {
             const shuffled = [...array];
@@ -372,6 +381,15 @@
         }
         
         function startQuiz(a) {
+                // ✅ 音声が流れていたら止める
+    if (audioPlayer) {
+        audioPlayer.pause();
+        audioPlayer.currentTime = 0;
+        audioPlayer = new Audio("っておいい_Track1.wav");
+        audioPlayer.play();
+    }
+
+
             document.getElementById('startScreen').classList.remove('active');
             document.getElementById('quizScreen').classList.add('active');
             currentQuestion = 0;
