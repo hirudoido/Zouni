@@ -277,7 +277,7 @@
     <div class="container">
         <!-- スタート画面 -->
         <div class="screen active" id="startScreen">
-            <h1> 二択早押しクイズ</h1>
+            <h1> お雑煮クイズ</h1>
             <div class="rules">
                 <h3>📋 ルール説明</h3>
                 <p>• 画像と問題が2.5秒間表示されます</p>
@@ -290,7 +290,7 @@
             </div>
             <button class="start-btn1" onclick="startQuiz(1)">クイックスタート</button>
             <button class="start-btn2" onclick="startQuiz(2)">フォーマルスタート</button>
-              <button class="start-btn3" onclick="playSound()">音声再生</button>
+              <button class="start-btn3" onclick="playSoundA()">音声再生</button>
         </div>
         
         <!-- クイズ画面 -->
@@ -323,6 +323,7 @@
             <h1>🏆 クイズ結果</h1>
             <div class="final-score" id="finalScore"></div>
             <div id="resultDetails"></div>
+            <div id="resultDetails2"></div>
             <button class="start-btn1" onclick="restartQuiz()">もう一度プレイ</button>
         </div>
     </div>
@@ -330,27 +331,14 @@
     <script>
         //432
         // クイズデータ（画像URLを実際のURLに置き換えてください）
-   /*   const quizData =           [    {
-                "image": "bass/01.jpg",
-                "question": "これはどの会社のバス？",
-                "choices": ["小田急バス", "京王電鉄バス"],
+     /* const quizData =           [   {
+                "image": "IMG/01.jpg",
+                "question": "お雑煮はいつから始まった？",
+                "choices": ["室町時代", "江戸時代"],
                 "correct": 0
             },
-            {
-                "image": "bass/02.jpg",
-                "question": "都営バスは何年から始まった？",
-               "choices": ["1963年", "1924年"],
-                "correct": 1
-            }];*/
-            //
+           ];:?*/
 
-function playSound() {
-
-        audioPlayer = new Audio("挨拶_Track1.wav");
-
-    audioPlayer.currentTime = 0;
-    audioPlayer.play();
-}
 
         fetch('./data.json')
           .then(res => res.json())
@@ -359,6 +347,18 @@ function playSound() {
             console.log(quizData); // ここで変数に格納された内容が見られる
           });
 
+        function playSoundA() {
+    if (!audioPlayerA) {
+          audioPlayerA = new Audio("っておいい_Track1.wav");
+    //audioPlayerA = new Audio("挨拶_Track1.wav");
+
+    }
+    //audioPlayerA.currentTime = 0;
+    audioPlayerA.play();
+}
+function isAudioAPlaying() {
+    return audioPlayerA && !audioPlayerA.paused;
+}
 
         let currentQuestion = 0;
         let score = 0;
@@ -368,7 +368,9 @@ function playSound() {
         let answers = [];
         let shuffledQuizData = [];
         let currentChoiceOrder = [];
-        let audioPlayer = null;
+        let audioPlayerA = null; // 最初の音声
+        let audioPlayerB = null; // 切り替え後の音声
+
         // 配列をシャッフルする関数
         function shuffleArray(array,a) {
             const shuffled = [...array];
@@ -382,12 +384,19 @@ function playSound() {
         
         function startQuiz(a) {
                 // ✅ 音声が流れていたら止める
-    if (audioPlayer) {
-        audioPlayer.pause();
-        audioPlayer.currentTime = 0;
-        audioPlayer = new Audio("っておいい_Track1.wav");
-        audioPlayer.play();
+    // ✅ 音声Aが流れている時だけ音声Bに切り替える
+    if (isAudioAPlaying()) {
+        audioPlayerA.pause();
+        audioPlayerA.currentTime = 0;
+
+        if (!audioPlayerB) {
+                    //audioPlayerB = new Audio("っておいい_Track1.wav");
+                audioPlayerB = new Audio("挨拶_Track1.wav"); // ← 切り替え後の音声
+        }
+        audioPlayerB.currentTime = 0;
+        audioPlayerB.play();
     }
+
 
 
             document.getElementById('startScreen').classList.remove('active');
@@ -559,6 +568,11 @@ function playSound() {
                 <div style="white-space: pre-line; margin: 1rem 0;">${resultText}</div>
                 <div style="font-size: 1.3rem; color: #ffd700; margin: 1rem 0;">${grade}</div>
             `;
+            if(correctCount === 10 ){
+             document.getElementById('resultDetails2').innerHTML = `
+               <button class="start-btn1" onclick="restartQuiz()">特別音声再生</button>
+               
+            `;}
         }
         
         function restartQuiz() {
