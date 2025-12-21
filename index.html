@@ -290,7 +290,7 @@
             </div>
             <button class="start-btn1" onclick="startQuiz(1)">クイックスタート</button>
             <button class="start-btn2" onclick="startQuiz(2)">フォーマルスタート</button>
-              <button class="start-btn3" onclick="playSoundA()">音声再生</button>
+              <button class="start-btn3" onclick="playSoundA(1)">音声再生</button>
         </div>
         
         <!-- クイズ画面 -->
@@ -347,10 +347,14 @@
             console.log(quizData); // ここで変数に格納された内容が見られる
           });
 
-        function playSoundA() {
+        function playSoundA(A) {
     if (!audioPlayerA) {
-          audioPlayerA = new Audio("っておいい_Track1.wav");
-    //audioPlayerA = new Audio("挨拶_Track1.wav");
+        if(A==1){
+          //audioPlayerA = new Audio("っておいい_Track1.wav");
+            audioPlayerA = new Audio("挨拶_Track1.wav");
+        } else {
+          audioPlayerA = new Audio("挨拶_Track1.wav");
+        }
 
     }
     //audioPlayerA.currentTime = 0;
@@ -390,8 +394,8 @@ function isAudioAPlaying() {
         audioPlayerA.currentTime = 0;
 
         if (!audioPlayerB) {
-                    //audioPlayerB = new Audio("っておいい_Track1.wav");
-                audioPlayerB = new Audio("挨拶_Track1.wav"); // ← 切り替え後の音声
+                    audioPlayerB = new Audio("っておいい_Track1.wav");
+                //audioPlayerB = new Audio("挨拶_Track1.wav"); // ← 切り替え後の音声
         }
         audioPlayerB.currentTime = 0;
         audioPlayerB.play();
@@ -570,7 +574,7 @@ function isAudioAPlaying() {
             `;
             if(correctCount === 10 ){
              document.getElementById('resultDetails2').innerHTML = `
-               <button class="start-btn1" onclick="restartQuiz()">特別音声再生</button>
+               <button class="start-btn1" onclick="restartQuiz(2)">特別音声再生</button>
                
             `;}
         }
