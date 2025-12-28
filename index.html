@@ -578,7 +578,9 @@ function isAudioAPlaying() {
              document.getElementById('resultDetails2').innerHTML = `
                <button class="start-btn3" onclick="playSoundA(2)">特別音声再生</button>
                
-            `;}
+            `;}else{
+                document.getElementById('resultDetails2').innerHTML = ``;
+            }
         }
         
         function restartQuiz() {
