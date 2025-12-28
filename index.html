@@ -347,19 +347,27 @@
             quizData = data;
             console.log(quizData); // ここで変数に格納された内容が見られる
           });
+function playSoundA(A) {
+    console.log("playSoundA called with A =", A);
 
-        function playSoundA(A) {
-console.log("playSoundA called with A =", A);
-        if(A==1){
-          //audioPlayerA = new Audio("っておいい_Track1.wav");
-            audioPlayerA = new Audio("挨拶_Track1.wav");
-        } else {
-          audioPlayerA = new Audio("特別_Track1.wav");
-        }  
-      console.log(audioPlayerA.paused);
-    //audioPlayerA.currentTime = 0;
+    // すでに音声があれば停止して破棄
+    if (audioPlayerA) {
+        audioPlayerA.pause();
+        audioPlayerA.currentTime = 0;
+        audioPlayerA = null;
+    }
+
+    // 新しい音声を作成
+    if (A == 1) {
+        console.log("音声Aを初期化します");
+        audioPlayerA = new Audio("挨拶_Track1.wav");
+    } else {
+        console.log("音声Bを初期化します");
+        audioPlayerA = new Audio("特別_Track1.wav");
+    }
+
+    audioPlayerA.currentTime = 0;
     audioPlayerA.play();
-  
 }
 function isAudioAPlaying() {
     return audioPlayerA && !audioPlayerA.paused;
@@ -394,9 +402,10 @@ function isAudioAPlaying() {
         audioPlayerA.pause();
         audioPlayerA.currentTime = 0;
 
+        if (!audioPlayerB) {
                     audioPlayerB = new Audio("っておいい_Track1.wav");
                 //audioPlayerB = new Audio("挨拶_Track1.wav"); // ← 切り替え後の音声
-        
+        }
         audioPlayerB.currentTime = 0;
         audioPlayerB.play();
     }
