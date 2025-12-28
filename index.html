@@ -287,6 +287,7 @@
                 <p>• 全問題終了後に結果が表示されます</p>
                 <p>• クイックスタートは5問で終わります</p>
                 <p>• フォーマルスタートは用意したすべて問題に全て答えてもらいます</p>
+                <p>• 声はキーキーうるさくでも最後まで聞きなさい</p>
             </div>
             <button class="start-btn1" onclick="startQuiz(1)">クイックスタート</button>
             <button class="start-btn2" onclick="startQuiz(2)">フォーマルスタート</button>
@@ -575,7 +576,7 @@ function isAudioAPlaying() {
             `;
             if(correctCount === 10 ){
              document.getElementById('resultDetails2').innerHTML = `
-               <button class="start-btn1" onclick="restartQuiz(2)">特別音声再生</button>
+               <button class="start-btn1" onclick="playSoundA(2)">特別音声再生</button>
                
             `;}
         }
